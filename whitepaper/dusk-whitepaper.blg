@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: dusk-whitepaper.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bibliography.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty address in Generator
+Warning--empty address in Shamir
+You've used 16 entries,
+            5706 wiz_defined-function locations,
+            1590 strings with 20540 characters,
+and the built_in function-call counts, 21275 in all, are:
+= -- 2711
+> -- 444
+< -- 0
++ -- 120
+- -- 893
+* -- 1552
+:= -- 2163
+add.period$ -- 82
+call.type$ -- 16
+change.case$ -- 92
+chr.to.int$ -- 14
+cite$ -- 18
+duplicate$ -- 923
+empty$ -- 729
+format.name$ -- 190
+if$ -- 4000
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 196
+num.names$ -- 126
+pop$ -- 404
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 406
+stack$ -- 0
+substring$ -- 3597
+swap$ -- 48
+text.length$ -- 1468
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 438
+warning$ -- 2
+while$ -- 128
+width$ -- 0
+write$ -- 339
+(There were 2 warnings)

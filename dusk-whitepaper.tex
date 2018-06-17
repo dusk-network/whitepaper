@@ -1,0 +1,85 @@
+\documentclass[sigconf]{acmart}
+\usepackage[utf8]{inputenc}
+
+\usepackage{booktabs} % For formal tables
+\usepackage{enumitem}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{varwidth}
+
+    \makeatletter
+    \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                              {-3.25ex\@plus -1ex \@minus -.2ex}%
+                              {.3ex \@plus .2ex}%
+                              {\normalfont\large\bfseries}}% from \normalsize
+    \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                              {-1.8ex\@plus -1ex \@minus -.2ex}%
+                              {.3ex \@plus .2ex}%
+                              {\normalfont\large\bfseries}}% from \normalsize
+    \def\BState{\State\hskip-\ALG@thistlm}
+    \newcommand{\algorithmicbreak}{\textbf{break}}
+    \newcommand{\Break}{\State \algorithmicbreak}
+    \newcommand\CONDITION[2]%
+    {\begin{tabular}[t]{@{}l@{}l@{}}
+        #1&#2
+    \end{tabular}%
+    }
+    \algdef{SE}[IF]{If}{EndIf}[1]%
+        {\algorithmicif\ \CONDITION{#1}{\ \algorithmicthen}}%
+        {\algorithmicend\ \algorithmicif}%
+    \makeatother
+
+% Copyright
+\setcopyright{none}
+\setcopyright{iw3c2w3}
+
+
+
+
+\begin{document}
+\title{The Dusk Network And Blockchain Architecture}
+
+\subtitle{Scalable consensus and low-latency data transmissions for privacy-driven cryptosystems}
+
+\author{Emanuele Francioni}
+\affiliation{%
+  \institution{Dusk Foundation}
+  \streetaddress{Van Eeghenstraat 94}
+  \city{Amsterdam}
+  \state{The Netherlands}
+  \postcode{1071 GL}}
+\email{emanuele@Dusk.network}
+
+\author{Fulvio Venturelli}
+\affiliation{%
+  \institution{Dusk Foundation}
+  \streetaddress{Van Eeghenstraat 94}
+  \city{Amsterdam}
+  \state{The Netherlands}
+  \postcode{1071 GL}}
+\email{fulvio@Dusk.network}
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{E. Francioni and F. Venturelli}
+
+\begin{abstract}
+In order to satisfy a broad set of data transfer scenario, the \textrm{Dusk} network adds an additional layer of security to the IP protocol suite (used mostly in a peer-to-peer fashion). Through the adoption of a mix of established strategies and novel techniques, the \textrm{Dusk} network has been conceived specifically to protect the privacy of the communicating peers from any form of eavesdropping while satisfying a variety of challenging use cases varying from fast communication (e.g. voice calls) to large data transfer (e.g. file transmission). \textrm{Dusk} circumvents the notorious unreliability of crowd-sourced infrastructures by embedding economic incentives into the core mechanism of the network itself. Such incentives are designed to encourage peers to partake in the network in a permission-less, anonymous and private fashion.
+
+\end{abstract}
+
+\keywords{Dusk, blockchain, cryptocurrency, privacy, consensus, segregated byzantine agreement}
+
+\settopmatter{printfolios=true}
+\maketitle
+
+\input{Dusk-preliminary}
+\input{Dusk-sba}
+\input{Dusk-network}
+\input{conclusions}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{bibliography}
+
+\end{document}
