@@ -1,5 +1,4 @@
 .DS_Store
-*pdf
 *.gz
 *fdb_latexmk
 *.log
